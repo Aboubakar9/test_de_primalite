@@ -1,0 +1,18 @@
+PRESENTATION DU TEST AKS
+
+Le test de primalité AKS est un algorithme de preuve de primalité déterministe et généraliste  publié le 6 août 2002 par trois scientifiques indiens nommés Manindra Agrawal, Neeraj Kayal et Nitin Saxena (A.K.S). Ce test est le premier en mesure de déterminer la primalité d'un nombre dans un temps polynomial.
+Le test de primarité AKS est fondé sur l'identité suivante, valable pour les nombres premiers, et qui est une généralisation du petit théorème de Fermat.
+Soient n > 1 un entier impair et r > 1 un entier. Supposons que
+I l'ordre de n dans Z=rZ^x est > (log2(n))^2,
+I n n'est divisible par aucun nombre premier p =< r et
+I (X + a)^n = X^n + a (mod X^r -1; n) pour tout aE2 [1; r ].
+Alors n est une puissance d'un nombre premier.
+
+=====================================================================================================================================================
+****Avantages***
+
+AKS garantit l’obtention en un temps polynomial d’une réponse catégorique sur la primarité d’un nombre. De fait, cet algorithme se démarque de tous les autres puisqu’il réunit les trois critères fondamentaux que nous allons maintenant préciser plus en détail.
+
+***Inconvenients***
+
+ le temps de calcul devient rapidement trop important lorsque le nombre à tester devient grand. Bien qu’il soit facile de prouver une meilleure complexité de l’algorithme AKS  en ?(log(n)^7.5) mais  cela reste encore assez lent étant donné que l’on estime que les algorithmes réellement utilisables doivent être au plus en ?(log(n)3).
